@@ -10,7 +10,7 @@ import javax.persistence.Table;
 public class SubTopic 
 {
 	@Id
-	@Column(name = "subtopic_id")
+	@Column(name = "subtopic_id", unique = true, nullable=false)
 	private String subtopicId;
 	@Column(name = "subtopic")
 	private String subtopic;
