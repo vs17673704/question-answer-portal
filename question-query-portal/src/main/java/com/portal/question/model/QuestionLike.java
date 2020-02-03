@@ -10,9 +10,10 @@ import javax.persistence.Table;
 public class QuestionLike 
 {
 	@Id
-	@Column(name = "qid")
+	@Column(name = "qid", nullable=false)
 	private String questionId;
-	@Column(name = "user_id")
+	@Id
+	@Column(name = "user_id", nullable=false)
 	private String userId;
 	
 	public QuestionLike() 
