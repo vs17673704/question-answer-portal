@@ -13,6 +13,7 @@ public class QuestionCompanyMapping
 	@Id
 	@Column(name = "qid", nullable=false)
 	private String questionId;
+	@Id
 	@Column(name = "company_id", nullable=false)
 	private String companyId;
 	
