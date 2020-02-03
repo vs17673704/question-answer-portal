@@ -10,9 +10,10 @@ import javax.persistence.Table;
 public class QuestionTag 
 {
 	@Id
-	@Column(name = "qid")
+	@Column(name = "qid", nullable=false)
 	private String questionId;
-	@Column(name = "tag")
+	@Id
+	@Column(name = "tag", nullable=false)
 	private String tag;
 	
 	public QuestionTag() 
