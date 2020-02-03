@@ -19,10 +19,6 @@ public class Topics
 	@Column(name = "topic")
 	private String topic;
 	
-	@OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-	@JoinColumn(name = "topic_name")
-	private List<SubTopic> subTopic;
-	
 	public Topics() 
 	{
 		
