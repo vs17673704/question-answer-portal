@@ -10,7 +10,7 @@ import javax.persistence.Table;
 public class Tags 
 {
 	@Id
-	@Column(name = "tag")
+	@Column(name = "tag", unique = true, nullable=false)
 	private String tag;
 	
 	public Tags() 
