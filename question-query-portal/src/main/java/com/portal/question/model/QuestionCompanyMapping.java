@@ -11,9 +11,9 @@ import javax.persistence.Table;
 public class QuestionCompanyMapping 
 {
 	@Id
-	@Column(name = "qid")
+	@Column(name = "qid", nullable=false)
 	private String questionId;
-	@Column(name = "company_id")
+	@Column(name = "company_id", nullable=false)
 	private String companyId;
 	
 	public QuestionCompanyMapping() 
