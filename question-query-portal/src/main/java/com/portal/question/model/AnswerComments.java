@@ -12,7 +12,7 @@ import javax.persistence.Table;
 public class AnswerComments 
 {
 	@Id
-	@Column(name = "comment_id")
+	@Column(name = "comment_id", unique = true, nullable=false)
 	private String commentId;
 	@Column(name = "comment")
 	private String comment;
