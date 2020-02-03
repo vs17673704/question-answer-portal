@@ -7,11 +7,11 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "questions", unique=true, nullable=false)
+@Table(name = "questions")
 public class Questions {
 		
 			@Id
-			@Column(name = "qid" )
+			@Column(name = "qid", unique = true, nullable=false )
 			private String questionId;
 			@Column(name = "question")
 			private String question;
