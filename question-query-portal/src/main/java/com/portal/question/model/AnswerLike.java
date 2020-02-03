@@ -10,7 +10,7 @@ import javax.persistence.Table;
 public class AnswerLike 
 {
 	@Id
-	@Column(name = "aid")
+	@Column(name = "aid",, unique = true, nullable=false)
 	private String answerId;
 	@Column(name = "user_id")
 	private String userId;
